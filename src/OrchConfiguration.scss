@@ -1,0 +1,83 @@
+@import './src/styles/base/_colors.scss';
+
+
+.main {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 10vw 30vw 10vw;
+    grid-gap: 1em;
+}
+
+header,
+footer {
+    grid-column: 1 / span 2;
+}
+
+/* Demo Specific Styles */
+.main {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 1em 0;
+}
+
+header,
+main,
+aside,
+footer {
+    background: #eaeaea;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 1em;
+}
+
+h1 {
+
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+input,
+input:disabled {
+
+    border-style: solid;
+    border-width: thin;
+    border-color: #c9c9c9;
+    padding: 4px;
+    margin-right: 2px;
+
+}
+
+
+.preview,
+.params {
+    // white-space: pre;
+    width: 100%;
+}
+
+button {
+    background-color:$buttonOk;
+    border: none;
+    margin: 2px;
+    padding: 5px;
+    // font-size: 16px;
+    // height: 40px;
+    // width: 200px;
+  }
+
+  .text-const {
+      color: $foreDisabled;
+  }
+
+  .text-small {
+      font-size: x-small;
+  }
+
+  .word-break {
+    word-break: break-all;
+ }
+
+ .token-text {
+    margin-top: .25em;
+ }

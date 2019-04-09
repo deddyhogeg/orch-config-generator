@@ -1,0 +1,13 @@
+.toolbar{
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin-bottom: 2px;
+
+	&.onlyRightSection{
+		flex-direction: row-reverse;
+	}
+
+	.firstCellLeftSection {
+		padding: 0;
+	}
+}

@@ -1,0 +1,16 @@
+@import '../../../styles/base';
+
+:global(.sis-scope) {
+	:global(.custom-checkbox__icon.app-icon) {
+		&.transparent {
+			background: transparent !important;
+			color: transparent;
+		}
+	}
+
+	:global(.custom-checkbox__input:checked + .custom-checkbox__icon) {
+		&.transparent {
+			color: $foreHover;
+		}
+	}
+}

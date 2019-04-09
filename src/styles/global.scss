@@ -1,0 +1,48 @@
+@import '~@sisense/sisense-styleguide/src/sass/base-all.scss';
+@import '~@sisense/sisense-styleguide/src/sass/base-desktop.scss';
+
+@import 'base';
+//@import 'global/fonts';
+
+@mixin defaultText {
+	font-family: $fontFamily, Helvetica, Helvetica Neue, sans-serif;
+	font-size: $sizeDefault;
+	color: $fore;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	@include defaultText;
+}
+
+input, textarea {
+	@include defaultText;
+
+	&::placeholder {
+		color: $forePlaceholder;
+	}
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+#root, .main-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 100%;
+	overflow: hidden;
+}
+
+#root [data-reactroot] {
+	height: 100%;
+}

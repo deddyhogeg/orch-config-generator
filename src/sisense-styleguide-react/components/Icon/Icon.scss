@@ -1,0 +1,12 @@
+.noSpin{
+    animation: none; // Fixing issue of IE11 (https://github.com/FortAwesome/Font-Awesome/issues/7572#issuecomment-297921533)
+}
+
+.spin {
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
